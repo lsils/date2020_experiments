@@ -21,10 +21,10 @@ make
 * Run the experiments from the build folder of `mockturtle`: 
 
 ```
-./experiments/xag_min ../experiments/db 
+./experiments/xag_minmc ../experiments/db 
 ```
 
-Running all the experiments will require some time. The number of experiments can be changed by changing the xag_min.cpp file. 
+Running all the experiments will require some time. The number of experiments can be changed by changing the xag_minmc.cpp file. 
 
 This experiment will produce the last column (complete flow) of Table 1 and Table 2 from [TSRAD20]. 
 
