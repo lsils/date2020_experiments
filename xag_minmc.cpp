@@ -48,12 +48,13 @@ static const char* crypto_epfl_benchmarks[] = {
     "arbiter_untilsat", "cavlc_untilsat", "ctrl_untilsat" , "dec_untilsat", "i2c_untilsat", "int2float_untilsat" , "mem_ctrl_untilsat", "priority_untilsat", "router_untilsat", "voter_untilsat", 
     "adder_32bit_untilsat", "adder_64bit_untilsat", "AES-expanded_untilsat", "AES-non-expanded_unstilsat", 
     "comparator_32bit_signed_lt_untilsat", "comparator_32bit_signed_lteq_untilsat", "comparator_32bit_unsigned_lt_untilsat", "comparator_32bit_unsigned_lteq_untilsat", 
-    "DES-expanded_untilsat", "DES-non-expanded_untilsat", "md5_untilsat", "mult_32x32_untilsat", "sha-1_untilsat", "sha-256_untilsat"};
+    "DES-expanded_untilsat", "DES-non-expanded_untilsat", "md5_untilsat", "mult_32x32_untilsat", "sha-1_untilsat", 
+    "sha-256_untilsat"};
 
 std::vector<std::string> crypto_benchmarks( )
 {
   std::vector<std::string> result;
-  for ( uint32_t i = 0u; i < 33u; ++i )
+  for ( uint32_t i = 0u; i < 32u; ++i ) // change this number to 33u to run also the sha-256 benchmark 
   {
       result.push_back( crypto_epfl_benchmarks[i] );
   }
