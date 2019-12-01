@@ -25,11 +25,11 @@ make
 ```
 
 Running all the experiments will require some time. The number of experiments can be changed by changing the xag_minmc.cpp file. 
-This experiment will produce the last column (complete flow) of Table 1 and Table 2 from [TSRAD20]. 
+This experiment will produce the last column (complete flow) of Table 1 and Table 2 from [1]. 
 
 
 
-To obtain Table 3, run: 
+To obtain Table 3 from [1], run: 
 
 ```
 ./experiments/xag_minmc_MPC ../experiments/db 
@@ -37,7 +37,7 @@ To obtain Table 3, run:
 
 ### Benchmarks 
 
-We apply our algorithm both on benchmarks coming from [TSAD19] and from [MPC19]. 
+We apply our algorithm both on benchmarks coming from [2] and from [3]. 
 
 ### Reference
 
