@@ -70,6 +70,27 @@ std::string crypto_benchmark_path( std::string const& benchmark_name )
 #endif
 }
 
+template<class Ntk>
+bool abc_cec_crypto( Ntk const& ntk, std::string const& benchmark )
+{
+  mockturtle::write_bench( ntk, "/tmp/test.bench" );
+  std::string command = fmt::format( "abc -q \"cec -n {} /tmp/test.bench\"", crypto_benchmark_path( benchmark ) );
+
+  std::array<char, 128> buffer;
+  std::string result;
+  std::unique_ptr<FILE, decltype( &pclose )> pipe( popen( command.c_str(), "r" ), pclose );
+  if ( !pipe )
+  {
+    throw std::runtime_error( "popen() failed" );
+  }
+  while ( fgets( buffer.data(), buffer.size(), pipe.get() ) != nullptr )
+  {
+    result += buffer.data();
+  }
+
+  return result.size() >= 23 && result.substr( 0u, 23u ) == "Networks are equivalent";
+}
+
 namespace detail
 {
 template<class Ntk>
@@ -195,7 +216,7 @@ int main( int argc, char** argv )
     std::cout << " num and after = " << num_and_aft << std::endl;
     std::cout << " num xor after = " << num_xor_aft << std::endl;
 
-    const auto cec = abc_cec( xag, benchmark );
+    const auto cec = abc_cec_crypto( xag, benchmark );
 
     float impro = (( num_and_init - num_and_aft )/num_and_init) * 100; 
   

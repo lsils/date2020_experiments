@@ -25,12 +25,25 @@ make
 ```
 
 Running all the experiments will require some time. The number of experiments can be changed by changing the xag_minmc.cpp file. 
-
 This experiment will produce the last column (complete flow) of Table 1 and Table 2 from [TSRAD20]. 
+
+
+
+To obtain Table 3, run: 
+
+```
+./experiments/xag_minmc_MPC ../experiments/db 
+```
+
+### Benchmarks 
+
+We apply our algorithm both on benchmarks coming from [TSAD19] and from [MPC19]. 
 
 ### Reference
 
-These results are described in the paper: [TSRAD20] Eleonora Testa, Mathias Soeken, Heinz Riener, Luca Amaru and Giovanni De Micheli, *A Logic Synthesis Toolbox for Reducing the
+[1] These results are described in the paper: [TSRAD20] Eleonora Testa, Mathias Soeken, Heinz Riener, Luca Amaru and Giovanni De Micheli, *A Logic Synthesis Toolbox for Reducing the
 Multiplicative Complexity in Logic Networks*, in *DATE* 2020.
 
-More on the same topic can be found in: [TSAD] Eleonora Testa, Mathias Soeken, Luca Amaru and Giovanni De Micheli, *Reducing the multiplicative complexity in logic networks for cryptography and security applications*, in *DAC* 2019. 
+[2] More on the same topic can be found in: [TSAD19](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8806905) Eleonora Testa, Mathias Soeken, Luca Amaru and Giovanni De Micheli, *Reducing the multiplicative complexity in logic networks for cryptography and security applications*, in *DAC* 2019. The experiments and benchmarks are available at: https://github.com/eletesta/dac19-experiments
+
+[3] The MPC benchmarks can be found in: [MPC19](https://eprint.iacr.org/2019/275.pdf) M. Sadegh Riazi, Mojan Javaheripi, Siam U. Hussain, Farinaz Koushanfar, *MPCircuits: Optimized circuit generation for secure multi-party computation*, in *HOST* 2019. They are available at: https://github.com/sadeghriazi/MPCircuits
