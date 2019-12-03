@@ -14,7 +14,7 @@ Experiments for DATE 2020:
 cd mockturtle
 mkdir build
 cd build
-cmake -DMOCKTURTLE_TEST=ON -DMOCKTURTLE_EXPERIMENTS=ON ..
+cmake -DMOCKTURTLE_TEST=ON -DMOCKTURTLE_EXPERIMENTS=ON -DCMAKE_BUILD_TYPE=Release ..
 make
 ```
 
