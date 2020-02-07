@@ -6,7 +6,7 @@ Experiments for DATE 2020:
 
 * Clone and build `abc`: https://github.com/berkeley-abc/abc (required for combinational equivalence checking)
 * Add the path to the executable of `abc` to your PATH variable
-* Clone `mockturtle`: https://github.com/lsils/mockturtle (this work has been evaluated using `mockturtle` from commit )
+* Clone `mockturtle`: https://github.com/lsils/mockturtle
 * Add the files from this repository to the experiments folder of `mockturtle`
 * Build `mockturtle` with experiments: 
 
@@ -41,9 +41,13 @@ We apply our algorithm both on benchmarks coming from [2] and from [3].
 
 ### Reference
 
-[1] These results are described in the paper: [TSRAD20] Eleonora Testa, Mathias Soeken, Heinz Riener, Luca Amaru and Giovanni De Micheli, *A Logic Synthesis Toolbox for Reducing the
+[1] These results are described in the paper: [TSRAD20](https://msoeken.github.io/papers/2020_date.pdf) Eleonora Testa, Mathias Soeken, Heinz Riener, Luca Amarù and Giovanni De Micheli, *A Logic Synthesis Toolbox for Reducing the
 Multiplicative Complexity in Logic Networks*, in *DATE* 2020.
 
-[2] More on the same topic can be found in: [TSAD19](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8806905) Eleonora Testa, Mathias Soeken, Luca Amaru and Giovanni De Micheli, *Reducing the multiplicative complexity in logic networks for cryptography and security applications*, in *DAC* 2019. The experiments and benchmarks are available at: https://github.com/eletesta/dac19-experiments
+[2] More on the same topic can be found in: [TSAD19](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8806905) Eleonora Testa, Mathias Soeken, Luca Amarù and Giovanni De Micheli, *Reducing the multiplicative complexity in logic networks for cryptography and security applications*, in *DAC* 2019. The experiments and benchmarks are available at: https://github.com/eletesta/dac19-experiments
 
 [3] The MPC benchmarks can be found in: [MPC19](https://eprint.iacr.org/2019/275.pdf) M. Sadegh Riazi, Mojan Javaheripi, Siam U. Hussain, Farinaz Koushanfar, *MPCircuits: Optimized circuit generation for secure multi-party computation*, in *HOST* 2019. They are available at: https://github.com/sadeghriazi/MPCircuits
+
+### Final Remark
+
+Note that few changes have been made in `mockturtle` since the implementation of this work, thus slightly different results may be achieved
