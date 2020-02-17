@@ -50,4 +50,4 @@ Multiplicative Complexity in Logic Networks*, in *DATE* 2020.
 
 ### Final Remark
 
-Note that few changes have been made in `mockturtle` since the implementation of this work, thus slightly different results may be achieved
+Note that few changes have been made in `mockturtle` since the implementation of this work, thus slightly different results may be achieved. In order to obtain the same results, see pull request [#231](https://github.com/lsils/mockturtle/pull/231) and commit `510579a`

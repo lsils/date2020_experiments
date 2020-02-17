@@ -56,7 +56,7 @@ static const int crypto_MPC_area[] = {
 std::vector<std::string> MPC_benchmarks( )
 {
   std::vector<std::string> result;
-  for ( uint32_t i = 0u; i < 1u; ++i ) // change this number to 20u to run also the stable matching benchmarks 
+  for ( uint32_t i = 0u; i < 18u; ++i ) // change this number to 20u to run also the stable matching benchmarks 
   {
       result.push_back( crypto_MPC_benchmarks[i] );
   }
