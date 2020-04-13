@@ -6,7 +6,7 @@ Experiments for DATE 2020:
 
 * Clone and build `abc`: https://github.com/berkeley-abc/abc (required for combinational equivalence checking)
 * Add the path to the executable of `abc` to your PATH variable
-* Clone `mockturtle`: https://github.com/lsils/mockturtle
+* Clone `mockturtle`: https://github.com/lsils/mockturtle (see Final Remark)
 * Add the files from this repository to the experiments folder of `mockturtle`
 * Build `mockturtle` with experiments: 
 
@@ -26,8 +26,6 @@ make
 
 Running all the experiments will require some time. The number of experiments can be changed by changing the xag_minmc.cpp file. 
 This experiment will produce the last column (complete flow) of Table 1 and Table 2 from [1]. 
-
-
 
 To obtain Table 3 from [1], run: 
 
@@ -50,4 +48,4 @@ Multiplicative Complexity in Logic Networks*, in *DATE* 2020.
 
 ### Final Remark
 
-Note that few changes have been made in `mockturtle` since the implementation of this work, thus slightly different results may be achieved. In order to obtain the same results, see pull request [#231](https://github.com/lsils/mockturtle/pull/231) and commit `510579a`
+Note that many changes have been made in `mockturtle` since the implementation of this work, thus different results may be achieved. In order to obtain the same results and have the code running, clone from the pull request [#231](https://github.com/lsils/mockturtle/pull/231) and commit `510579a`
